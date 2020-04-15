@@ -1,48 +1,41 @@
 import React from 'react';
+import {GoDashboard, TiChartBarOutline, FaChartArea, FaWallet, AiOutlineLineChart} from 'react-icons/all';
+import Cards from '../Layout/Cards';
+import '../assets/css/Dashboard.css';
 
 function Dashboard(props) {
     return(
-        <div>
-        <h1>Dashboard</h1>
-        <p>
-
-        Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-        </p>
+        <div> 
+            <h3 className="subtitle"> <GoDashboard className="subIcon"/> DASHBOARD</h3>
+            <div className="view">
+                <Cards 
+                    className="TotalMoney"
+                    subtitle="Total Money Invested"
+                    info="$7,500"
+                    icon={<TiChartBarOutline/>}
+                />
+                <Cards 
+                    className="Revenue"
+                    subtitle="Total Revenue"
+                    info="$12,500"
+                    icon={<AiOutlineLineChart/>}
+                />
+                <Cards 
+                    className="Investment"
+                    subtitle="Current Investment"
+                    info="$3,000"
+                    icon={<FaChartArea/>}
+                />
+                <Cards 
+                    className="Balance"
+                    subtitle="Total Balance"
+                    info="$8,200"
+                    icon={<FaWallet/>}
+                />
+            </div>
+            <div className="copyright">
+                <p>Copyright © 2020 Solab Technologies. All rights reserved.</p>
+            </div>
        </div>
     )
 

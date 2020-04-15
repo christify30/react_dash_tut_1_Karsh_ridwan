@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from './header';
 import Sidebar from './sideBar';
-import './mainlayout.css';
-import './content.css';
+import '../assets/css/mainlayout.css';
+import '../assets/css/content.css';
+
 
 function MainLayout(props){
     return(

@@ -1,8 +1,8 @@
-import React,{Fragment} from 'react';
- import MainLayout from './Component/MainLayout';
- import {BrowserRouter,Route, Switch} from 'react-router-dom';
+import React from 'react';
+import MainLayout from './Component/MainLayout';
+import {BrowserRouter,Route, Switch} from 'react-router-dom';
 import Dashboard from './Pages/Dashboard';
-import Wallet from './Pages/Wallet';
+import Report from './Pages/Report';
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <Switch>
        <MainLayout>
          <Route exact path="/dashboard" component={Dashboard}/>
-         <Route exact path="/wallet" component={Wallet}/>
+         <Route exact path="/report" component={Report}/>
        </MainLayout>
     </Switch>
     </BrowserRouter>

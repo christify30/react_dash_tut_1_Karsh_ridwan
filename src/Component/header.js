@@ -1,7 +1,7 @@
 import React from 'react';
-import {FiMessageSquare,MdNotificationsActive} from 'react-icons/all';
-import logo from '../assets/james-ndu.jpg';
-import './header.css'
+import {MdMessage,AiFillNotification} from 'react-icons/all';
+import logo from '../assets/img/profile.jpg';
+import '../assets/css/header.css';
 
 
 function Header(props){
@@ -11,9 +11,9 @@ function Header(props){
  
         </div>
         <div className="right_nav">
-           <FiMessageSquare className="nav_icon"/>
-           <MdNotificationsActive className="nav_icon"/>
-           <img className="users_logo" src={logo} alt="persons pic"/> 
+           <MdMessage className="nav_icon1"/>
+           <AiFillNotification className="nav_icon1"/>
+           <img className="users_logo" src={logo} alt="persons pic"/>
         </div>
      </nav>
     )
