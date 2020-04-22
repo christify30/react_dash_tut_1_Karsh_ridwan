@@ -1,3 +1,6 @@
+/* .MainBody{
+    margin-right: 5%;
+} */
 .subtitle {
         font-size: 25px;
         margin: 5px;
@@ -10,7 +13,7 @@
 
 .copyright{
     text-align: center;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -40,4 +43,27 @@
 
 .Balance{
     background: rgb(64, 12, 133);
+}
+
+.todo-list{
+    background-color: white;
+    margin: 2%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #dfdede;
+    border-radius: 1%;
+    box-shadow: 
+        /* Top layer */
+        0 1px 1px rgba(0,0,0,30),
+        /* Top layer shadow */
+        0 10px 0 -5px rgb(139, 139, 139),
+        /* second layer */
+        0 10px 1px -4px rgba(0,0,0,30),
+        /* Second layer shadow*/
+        0 20px 0 -10px rgb(90, 90, 90),
+        /* Second layer shadow */
+        0 20px 1px -9px rgba(0,0,0,30);
+    padding: 30px;
 }

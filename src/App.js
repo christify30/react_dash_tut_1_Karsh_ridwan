@@ -3,6 +3,8 @@ import MainLayout from './Component/MainLayout';
 import {BrowserRouter,Route, Switch} from 'react-router-dom';
 import Dashboard from './Pages/Dashboard';
 import Report from './Pages/Report';
+import Schedule from './Pages/Schedule';
+import MyRequest from './Pages/MyRequest';
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
        <MainLayout>
          <Route exact path="/dashboard" component={Dashboard}/>
          <Route exact path="/report" component={Report}/>
+         <Route exact path="/schedule" component={Schedule}/>
+         <Route exact path="/request" component={MyRequest}/>
        </MainLayout>
     </Switch>
     </BrowserRouter>
