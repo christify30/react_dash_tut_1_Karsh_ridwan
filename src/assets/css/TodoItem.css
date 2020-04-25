@@ -19,3 +19,6 @@ input[type=checkbox] {
 input[type=checkbox]:focus {
     outline: 0;
 }
+.strike{
+    text-decoration:line-through;
+}
