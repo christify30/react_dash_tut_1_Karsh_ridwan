@@ -21,4 +21,5 @@ input[type=checkbox]:focus {
 }
 .strike{
     text-decoration:line-through;
+    color: brown;
 }
