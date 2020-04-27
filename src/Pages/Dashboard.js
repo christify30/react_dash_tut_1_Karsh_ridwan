@@ -1,9 +1,8 @@
 import React from 'react';
-import {GoDashboard, TiChartBarOutline, FaChartArea, FaWallet, AiOutlineLineChart} from 'react-icons/all';
-import Cards from '../Layout/Cards';
+import {GoDashboard, GiBriefcase, FaTasks, FaWallet, AiOutlineLineChart} from 'react-icons/all';
+import Cards from '../Components/Cards';
 import '../assets/css/Dashboard.css';
-import MyRequest from './MyRequest';
-// import MyCalendar from './Schedule';
+import TodoList from '../Components/TodoList';
 
 function Dashboard(props) {
 
@@ -12,10 +11,10 @@ function Dashboard(props) {
             <h3 className="subtitle"> <GoDashboard className="subIcon"/> DASHBOARD</h3>
             <div className="view">
                 <Cards 
-                    className="TotalMoney"
-                    subtitle="Total Investment"
-                    info="$7,500"
-                    icon={<TiChartBarOutline/>}
+                    className="Projects"
+                    subtitle="Active Projects"
+                    info="3"
+                    icon={<GiBriefcase/>}
                 />
                 <Cards 
                     className="Revenue"
@@ -24,26 +23,22 @@ function Dashboard(props) {
                     icon={<AiOutlineLineChart/>}
                 />
                 <Cards 
-                    className="Investment"
-                    subtitle="Current Investment"
-                    info="$3,000"
-                    icon={<FaChartArea/>}
+                    className="Tasks"
+                    subtitle="Tasks Completed"
+                    info="5"
+                    icon={<FaTasks/>}
                 />
                 <Cards 
-                    className="Balance"
-                    subtitle="Total Balance"
-                    info="$8,200"
+                    className="Reports"
+                    subtitle="Reports pending"
+                    info="7"
                     icon={<FaWallet/>}
                 />
             </div>
 
-            <div className>
-                <MyRequest />
+            <div>
+                <TodoList/>
             </div>                  
-
-            <div className="copyright">
-                <p>Copyright © 2020 Solab Technologies. All rights reserved.</p>
-            </div>
        </div>
     )
 

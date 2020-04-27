@@ -1,9 +1,7 @@
-
 import React from 'react'
-
 import '../assets/css/TodoItem.css'
 
-function TodoItem(props) {
+const TodoItem = (props) => {
     return (
         <div className="todo-item">
             <input 
