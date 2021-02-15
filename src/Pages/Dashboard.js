@@ -1,48 +1,44 @@
 import React from 'react';
+import {GoDashboard, GiBriefcase, FaTasks, FaWallet, AiOutlineLineChart} from 'react-icons/all';
+import Cards from '../Components/Cards';
+import '../assets/css/Dashboard.css';
+import TodoList from '../Components/TodoList';
 
 function Dashboard(props) {
+
     return(
-        <div>
-        <h1>Dashboard</h1>
-        <p>
+        <div className="MainBody"> 
+            <h3 className="subtitle"> <GoDashboard className="subIcon"/> DASHBOARD</h3>
+            <div className="view">
+                <Cards 
+                    className="Projects"
+                    subtitle="Active Projects"
+                    info="3"
+                    icon={<GiBriefcase/>}
+                />
+                <Cards 
+                    className="Revenue"
+                    subtitle="Total Revenue"
+                    info="$12,500"
+                    icon={<AiOutlineLineChart/>}
+                />
+                <Cards 
+                    className="Tasks"
+                    subtitle="Tasks Completed"
+                    info="5"
+                    icon={<FaTasks/>}
+                />
+                <Cards 
+                    className="Reports"
+                    subtitle="Reports pending"
+                    info="7"
+                    icon={<FaWallet/>}
+                />
+            </div>
 
-        Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-Hello, I'm trying to use the ARRAY datatype for sequelize with PostgreSQL. However I'm not exactly sure how to utilize it. I know how to set it on the schema but how do you push new items onto the array with a write and retrieve a specific index from the array in a query, etc.
-
-I tried going to the docs to figure this out however theres not much documentation on this as opposed to other datatypes. If this comes up a lot I would be glad to add docs to it if you can explain it to me.
-        </p>
+            <div>
+                <TodoList/>
+            </div>                  
        </div>
     )
 

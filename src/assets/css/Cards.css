@@ -1,0 +1,59 @@
+.left{
+    flex: 2;
+    text-align: center;
+    justify-items: center;
+    padding-top: 10px;
+}
+
+.right{
+    flex: 1;
+    justify-items: right;
+}
+
+.info{
+    font-family: 'lobster', 'Times New Roman', serif;
+}
+
+/* If the screen size is wide or more, set the font-size of <div> to */
+@media screen and (min-width: 751px) {
+    h5.subtitle{
+        font-size: 25px;
+    }
+
+    .icon{
+        font-size: 2em;
+        text-align: center;
+        padding-right: 5px;
+    }
+
+    #MainCard {
+        font-size: 30px;
+        border-radius: 10%;
+        display: flex;
+        padding: 10px;
+        color: floralwhite;
+    }
+  }
+  
+  /* If the screen size is wide or less, set the font-size of <div> to */
+  @media screen and (max-width: 750px) {
+    h5.subtitle{
+        font-size: 12px;
+    }
+
+    .icon{
+        font-size: 10px;
+        text-align: center;
+        padding-right: 5px;
+    }
+
+    #MainCard {
+        font-size: 10px;
+        border-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        color: floralwhite;
+    }
+  }
+

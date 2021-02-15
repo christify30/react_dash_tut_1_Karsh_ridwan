@@ -1,8 +1,13 @@
+.layout{
+    display: flex
+}
+
 .content{
-    flex: 4;
+    flex: 6;
     width: 100%;
     height: 100vh;
     padding-top: 11vh;
     padding-left: 10px;
+    padding-right: 10px;
     overflow-y: scroll
 }

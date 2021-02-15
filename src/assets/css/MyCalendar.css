@@ -1,0 +1,13 @@
+.calenderLayout{
+    background-color:rgb(39, 59, 145);
+    font-size: 20px;
+    color: rgb(210, 255, 7);
+    margin: 2%;
+    width: 92%;
+    display: grid;
+    grid-template-columns: minmax(30%, 100%);
+    grid-template-rows: 600px;
+    border-radius: 1%;
+    padding: 30px;
+    border: 10px outset rgba(96, 248, 35, 0.582) ;
+}

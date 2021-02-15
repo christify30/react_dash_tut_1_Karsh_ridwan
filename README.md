@@ -67,14 +67,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-
-
-
-
-step 1
-git remote add origin https://github.com/christify30/react_dash_tut_1_Karsh_ridwan.git
-
-
-step 2 npm install
-
-git checkout -b karsh
+Dashboard Application for employeeb to track deliverables and appraisal.
